@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,8 +10,10 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.5}
 a{color:inherit}.wrap{width:min(1140px,calc(100% - 30px));margin:auto}
 .top{background:#171513;color:#fff;padding:8px;text-align:center;font-size:11px;font-weight:800;letter-spacing:1.4px}
-.hero{min-height:86vh;color:#fff;display:flex;align-items:flex-end;position:relative;overflow:hidden;background:linear-gradient(90deg,#071014d9,#173a3bb8 52%,#b7472a99),url('sarau-na-quebrada-marca.jpg') center/cover no-repeat}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07101488 0%,transparent 55%);pointer-events:none}
+.hero{min-height:86vh;color:#fff;display:flex;align-items:flex-end;position:relative;overflow:hidden;background:linear-gradient(130deg,#173a3b,#245e78 48%,#b7472a)}
+.hero:after{content:"";position:absolute;inset:-20%;background:
+repeating-linear-gradient(45deg,transparent 0 34px,#ffffff18 35px 36px),
+repeating-linear-gradient(-45deg,transparent 0 49px,#ffffff12 50px 51px);transform:rotate(3deg)}
 .hero .inner{position:relative;z-index:2;padding:70px 0 55px}
 .kicker{font-size:13px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:#ffe2a0}
 h1{font:700 clamp(48px,9vw,105px)/.84 Georgia,serif;max-width:900px;margin:17px 0}
@@ -35,10 +37,6 @@ h2{font:700 clamp(34px,5vw,56px)/1 Georgia,serif;margin:0 0 13px}.lead{font-size
 footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 .modal{display:none;position:fixed;inset:0;background:#000b;z-index:100;padding:18px;align-items:center;justify-content:center}.modal.open{display:flex}.modalbox{background:#fffaf0;color:#171513;max-width:800px;width:100%;max-height:90vh;overflow:auto;border-radius:22px;padding:27px;position:relative}.close{position:absolute;right:13px;top:10px;border:0;border-radius:50%;width:37px;height:37px;font-size:22px;cursor:pointer}
 @media(max-width:650px){section{padding:48px 0}.wrap{width:calc(100% - 24px)}.grid{grid-template-columns:1fr}.hero{min-height:80vh}.media{height:190px}}
-
-/* Identidade Sarau na Quebrada */
-.btn{transition:transform .18s ease,box-shadow .18s ease}.btn:hover{transform:translateY(-2px) rotate(-.5deg);box-shadow:4px 5px 0 #171513}.btn.sarau{background:#f2a52b;border:2px solid #171513;border-radius:8px 22px 10px 20px;box-shadow:3px 3px 0 #e95420}.sarau-brand{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:24px;align-items:center;margin:28px 0;padding:20px;background:#fff;border:1px solid var(--line);border-radius:22px}.sarau-logo{width:100%;max-width:240px;border-radius:14px}.photo-watermark{position:relative;overflow:hidden;border-radius:16px}.photo-watermark>img:first-child{display:block;width:100%;height:auto}.photo-watermark:after{content:"";position:absolute;right:12px;bottom:12px;width:110px;height:90px;background:url('sarau-na-quebrada-marca.jpg') center/contain no-repeat;opacity:.24;pointer-events:none;filter:drop-shadow(0 1px 1px #fff)}
-@media(max-width:650px){.sarau-brand{grid-template-columns:1fr}.sarau-logo{max-width:190px;margin:auto}.photo-watermark:after{width:82px;height:68px}}
 </style>
 </head>
 <body>
@@ -55,22 +53,9 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 </header>
 
 <nav><div class="wrap nav">
-<a href="#inicio">🏠 Início</a><a href="#recentes">🆕 Publicações recentes</a><a href="#trajetoria">📜 Trajetória</a><a href="#brasil">🇧🇷 Brasil</a><a href="#mulheres">👩🏾 Mulheres</a><a href="#culturaviva">🌱 Cultura Viva</a><a href="#projetos">🛠️ Projetos</a><a href="#multimidia">🎬 Fotos & Vídeos</a><a href="#poesia">✍🏽 Poesia</a><a href="#imprensa">📰 Imprensa</a><a href="#acervo">📚 Acervo</a>
+<a href="#inicio">🏠 Início</a><a href="#trajetoria">📜 Trajetória</a><a href="#brasil">🇧🇷 Brasil</a><a href="#mulheres">👩🏾 Mulheres</a><a href="#culturaviva">🌱 Cultura Viva</a><a href="#projetos">🛠️ Projetos</a><a href="#multimidia">🎬 Fotos & Vídeos</a><a href="#poesia">✍🏽 Poesia</a><a href="#imprensa">📰 Imprensa</a><a href="#acervo">📚 Acervo</a>
 </div></nav>
 <div class="pattern"></div>
-
-<section id="recentes" class="white">
-<div class="wrap">
-<h2>🆕 Publicações recentes</h2>
-<p class="lead">Espaço vivo para reunir os textos, poemas, crônicas, memórias, fotografias e registros autorais de Neri Silva Silvestre. As novas publicações poderão ser acrescentadas aqui sem reconstruir o site.</p>
-<div class="grid">
-<div class="card"><span class="tag">POESIA</span><h3>Poemas autorais</h3><p>Publicação de poemas completos, com título, data e contexto, preservando a escrita e a voz do autor.</p></div>
-<div class="card"><span class="tag">MEMÓRIA</span><h3>Memórias Macunaímicas</h3><p>Relatos de território, infância, futebol de várzea, cultura popular e experiências vividas nas quebradas.</p></div>
-<div class="card"><span class="tag">PENSAMENTO</span><h3>Cultura, território e cidadania</h3><p>Textos e reflexões autorais sobre Cultura Viva, participação social, políticas culturais, território e direito à cultura.</p></div>
-</div>
-<div class="note"><b>Critério editorial:</b> esta área prioriza textos autorais e fotografias do acervo pessoal de Neri. Materiais de terceiros só entram quando forem necessários como documento ou referência, sempre identificados.</div>
-</div>
-</section>
 
 <section id="trajetoria" class="white">
 <div class="wrap">
@@ -91,11 +76,11 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 <h2>🇧🇷 Brasil: cinco regiões, muitos mundos culturais</h2>
 <p class="lead">A identidade do site passa a tratar o Brasil como um mosaico vivo: culturas indígenas, negras, quilombolas, caiçaras, ribeirinhas, sertanejas, urbanas e populares, sem reduzir nenhuma delas a um estereótipo.</p>
 <div class="grid">
-<div class="region" style="background:linear-gradient(135deg,#245e78,#28634c)"><div><h3>Norte</h3><p>Povos indígenas, rios, florestas, festas, línguas e sistemas de conhecimento.</p></div></div>
-<div class="region" style="background:linear-gradient(135deg,#245e78,#28634c)"><div><h3>Nordeste</h3><p>Samba de roda, maracatu, cordel, repente, forró, quilombos e culturas populares.</p></div></div>
-<div class="region" style="background:linear-gradient(135deg,#245e78,#28634c)"><div><h3>Centro-Oeste</h3><p>Cerrado, povos indígenas, comunidades tradicionais, festas e saberes da terra.</p></div></div>
-<div class="region" style="background:linear-gradient(135deg,#245e78,#28634c)"><div><h3>Sudeste</h3><p>Caiçaras, jongo, samba, congadas, cultura urbana, periferias e futebol de várzea.</p></div></div>
-<div class="region" style="background:linear-gradient(135deg,#245e78,#28634c)"><div><h3>Sul</h3><p>Fandango caiçara, festas, imigrações, culturas negras, indígenas e comunidades litorâneas.</p></div></div>
+<div class="region" style="background-image:linear-gradient(0deg,#0009,#0000),url('https://www.gov.br/cultura/pt-br/assuntos/noticias/ritual-yaokwa-iphan-realiza-acoes-de-salvaguarda-com-indigenas-enawene-nawe/meucarrossel-3.jpg/@@images/2e31f8e6-e9c6-4eab-8268-9ce67b7a11ed.jpeg')"><div><h3>Norte</h3><p>Povos indígenas, rios, florestas, festas, línguas e sistemas de conhecimento.</p></div></div>
+<div class="region" style="background-image:linear-gradient(0deg,#0009,#0000),url('https://www.ba.gov.br/cultura/sites/site-secult/files/2025-04/Ganhadeiras%20de%20Itapu%C3%A3%20por%20Leto%20Carvalho.%20IMG_6963.jpg')"><div><h3>Nordeste</h3><p>Samba de roda, maracatu, cordel, repente, forró, quilombos e culturas populares.</p></div></div>
+<div class="region" style="background-image:linear-gradient(0deg,#0009,#0000),url('https://www.gov.br/iphan/pt-br/superintendencias/parana/2-edicao-paisagens-caicaras')"><div><h3>Centro-Oeste</h3><p>Cerrado, povos indígenas, comunidades tradicionais, festas e saberes da terra.</p></div></div>
+<div class="region" style="background-image:linear-gradient(0deg,#0009,#0000),url('https://www.paranagua.pr.gov.br/imgbank/big/4972.jpg')"><div><h3>Sudeste</h3><p>Caiçaras, jongo, samba, congadas, cultura urbana, periferias e futebol de várzea.</p></div></div>
+<div class="region" style="background-image:linear-gradient(0deg,#0009,#0000),url('https://observatoriodopatrimonio.com.br/site/images/speasyimagegallery/albums/55/images/o-de-casa-42.jpg')"><div><h3>Sul</h3><p>Fandango caiçara, festas, imigrações, culturas negras, indígenas e comunidades litorâneas.</p></div></div>
 <div class="region" style="background:linear-gradient(135deg,#245e78,#b7472a)"><div><h3>Brasil inteiro</h3><p>Mulheres, mestres, artistas, coletivos e comunidades como produtoras de memória e futuro.</p></div></div>
 </div>
 <div class="note"><b>Fonte de referência:</b> o Iphan reúne patrimônio imaterial como saberes, ofícios, celebrações, formas de expressão e lugares, reconhecendo a diversidade dos grupos formadores do Brasil. citeturn3search4</div>
@@ -106,9 +91,11 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 <div class="wrap">
 <h2>👩🏾 Mulheres que fazem cultura</h2>
 <p class="lead muted">Uma página própria para mulheres de diferentes regiões, gerações e territórios — artistas, mestras, pesquisadoras, produtoras, parteiras, guardiãs de saberes, lideranças comunitárias e fazedoras de cultura.</p>
-<div class="grid">
-<div class="card"><div class="icon">📷</div><h3>Acervo pessoal</h3><p>Este espaço receberá fotografias do acervo de Neri, com identificação das pessoas, local, data e contexto quando essas informações estiverem disponíveis.</p></div>
-<div class="card"><div class="icon">📝</div><h3>Memórias e relatos</h3><p>Textos autorais poderão acompanhar as fotografias para registrar as histórias das mulheres que fazem parte dessa trajetória cultural.</p></div>
+<div class="gallery">
+<figure><img src="https://www.ba.gov.br/cultura/sites/site-secult/files/2025-04/Ganhadeiras%20de%20Itapu%C3%A3%20por%20Leto%20Carvalho.%20IMG_6963.jpg" alt="Mulheres das Ganhadeiras de Itapuã em apresentação de samba de roda"><figcaption>Bahia — Ganhadeiras de Itapuã. Foto: Leto Carvalho / SecultBA.</figcaption></figure>
+<figure><img src="https://www.gov.br/cultura/pt-br/assuntos/noticias/ritual-yaokwa-iphan-realiza-acoes-de-salvaguarda-com-indigenas-enawene-nawe/meucarrossel-3.jpg/@@images/2e31f8e6-e9c6-4eab-8268-9ce67b7a11ed.jpeg" alt="Participantes indígenas em ação relacionada ao ritual Yaokwa"><figcaption>Mato Grosso — povos indígenas e transmissão de saberes. Fonte: Ministério da Cultura/Iphan.</figcaption></figure>
+<figure><img src="https://www.culturalsurvival.org/sites/default/files/2024-11/Foto%20Mulheres%20-%20Angela%20Martins.jpeg" alt="Mulheres quilombolas tocando instrumentos em celebração cultural"><figcaption>Mato Grosso — mulheres quilombolas em celebração cultural. Foto: Angela Martins / Cultural Survival.</figcaption></figure>
+<figure><img src="https://www.paranagua.pr.gov.br/imgbank/big/4972.jpg" alt="Mulheres participando de apresentação de fandango caiçara"><figcaption>Paraná — Fandango Caiçara, patrimônio cultural brasileiro.</figcaption></figure>
 </div>
 <div class="quote">Mulheres também são arquivo vivo: carregam, recriam, ensinam e transformam saberes em cada território.</div>
 <div class="note">O Iphan reconheceu em 2024 os saberes e práticas das parteiras tradicionais como Patrimônio Cultural do Brasil, destacando sua presença em diferentes regiões e entre comunidades indígenas, quilombolas e de terreiros. citeturn3search5</div>
@@ -119,15 +106,10 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 <div class="wrap">
 <h2>🌱 Cultura Viva: a cultura como rede</h2>
 <p class="lead">A trajetória pública de Neri está fortemente ligada ao Ponto de Cultura, ao Sarau na Quebrada e à cultura de base comunitária.</p>
-<div class="sarau-brand"><img class="sarau-logo" src="sarau-na-quebrada-marca.jpg" alt="Marca Sarau na Quebrada — Periferia Organizada"><div><span class="tag">PERIFERIA ORGANIZADA</span><h3>Sarau na Quebrada</h3><p>Identidade visual do coletivo integrada ao memorial. Nas fotografias autorais publicadas nesta página, a marca poderá aparecer como marca d’água visual, sem alterar os arquivos originais.</p><a class="btn sarau" href="#poesia">Ler poesias ✍🏽</a><a class="btn sarau" href="#multimidia">Ver fotos e vídeos 🎬</a></div></div>
 <div class="grid">
 <div class="card"><div class="icon">🎤</div><h3>Sarau na Quebrada</h3><p>O CulturAZ registra o coletivo como surgido no Ponto de Cultura Mistura e Gingada, com poesia, música, debates, documentários, livros, protestos e microfone aberto.</p></div>
 <div class="card"><div class="icon">🏘️</div><h3>Território</h3><p>O MuseusBr registra o Sarau como coletivo existente desde 2011, com ações centralizadas no Jardim Santo André e foco em cultura de base comunitária.</p></div>
 <div class="card"><div class="icon">🗣️</div><h3>Participação</h3><p>Há registros de debates sobre política cultural, descentralização, direitos culturais e direito à cidade mediados por Neri.</p></div>
-</div>
-<div class="grid">
-<div class="card"><div class="icon">📷</div><h3>Fotos da Cultura Viva</h3><p>Galeria reservada para fotografias do acervo pessoal: Pontos de Cultura, Teias, encontros, formações, saraus e ações comunitárias.</p></div>
-<div class="card"><div class="icon">🎥</div><h3>Vídeos e memória audiovisual</h3><p>Área preparada para vídeos da trajetória, incluindo registros de Pontos de Cultura e o material da TV Taubaté assim que o endereço correto do vídeo for incorporado.</p></div>
 </div>
 <div class="quote">“Cultura, território e participação” — três palavras que atravessam o memorial.</div>
 </div>
@@ -148,7 +130,7 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 <section id="multimidia" class="dark">
 <div class="wrap">
 <h2>🎬 Fotos, vídeos e audiovisual</h2>
-<p class="lead muted">Área multimídia para reunir prioritariamente fotografias e vídeos do acervo pessoal, além de registros públicos diretamente ligados à trajetória de Neri.</p>
+<p class="lead muted">Agora o site tem uma área multimídia real: vídeo incorporado, galeria pública e acesso direto ao acervo do CulturAZ.</p>
 <div class="grid">
 <div class="card">
 <h3>▶️ A Voz dos Saraus</h3>
@@ -166,16 +148,16 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 <a class="btn" href="https://culturaz.santoandre.sp.gov.br/projeto/2349/" target="_blank">Ver materiais ↗</a>
 </div>
 </div>
-<div class="note"><b>Critério do acervo:</b> priorizar fotografias, vídeos, documentos e textos de Neri. Registros públicos de terceiros só permanecem quando documentarem diretamente sua trajetória e devem manter crédito e fonte.</div>
+<div class="note">O site diferencia <b>acervo pessoal</b> de <b>imagens públicas de referência</b>. As fotografias públicas devem permanecer com crédito e link para a fonte.</div>
 </div>
 </section>
 
 <section id="poesia" class="white">
 <div class="wrap">
 <h2>✍🏽 Poesia e pensamento</h2>
-<p class="lead">Espaço dedicado aos poemas e textos autorais de Neri, às reflexões sobre cultura e território e ao arquivo Macunaímico.</p>
+<p class="lead">Espaço para os poemas autorais, textos curtos, reflexões sobre cultura e território e o arquivo do Jornal Macunaíma.</p>
 <div class="grid">
-<div class="card"><h3>📖 Poemas</h3><p>Área para textos completos, título, data e contexto.</p><button class="btn" onclick="modal('Poemas','Os poemas autorais de Neri serão publicados aqui em leitura confortável, preservando sua voz. Correções ortográficas só serão aplicadas quando solicitadas.')">Abrir seção</button></div>
+<div class="card"><h3>📖 Poemas</h3><p>Área para textos completos, título, data e contexto.</p><button class="btn" onclick="modal('Poemas','Os poemas autorais serão inseridos aqui em leitura confortável, sem alterar o texto original.')">Abrir seção</button></div>
 <div class="card"><h3>📰 Macunaíma</h3><p>Arquivo da experiência editorial dos anos 1990.</p><button class="btn" onclick="modal('Macunaíma','Aqui entra a edição digital restaurada do jornal/fanzine, com imagens das páginas e transcrição quando necessário.')">Abrir seção</button></div>
 <div class="card"><h3>🧠 Ideias</h3><p>Cultura, cidadania, território, economia da cultura e políticas públicas.</p></div>
 </div>
@@ -206,7 +188,7 @@ footer{background:#0d1519;color:#dce3e6;padding:45px 0;text-align:center}
 <div class="card"><h3>🪶 Patrimônio Indígena</h3><p>Referências oficiais sobre saberes, danças, sítios, celebrações, modos de fazer e práticas indígenas.</p><a class="btn dark" href="https://www.gov.br/iphan/pt-br/patrimonio-cultural/patrimonio-indigena" target="_blank">Conhecer ↗</a></div>
 <div class="card"><h3>🎭 Bem Brasileiro</h3><p>Mapa e acervo do patrimônio imaterial: celebrações, expressões, lugares e saberes.</p><a class="btn dark" href="https://bcr.iphan.gov.br/" target="_blank">Explorar ↗</a></div>
 </div>
-<div class="note"><b>Acervo em construção:</b> fotografias, vídeos, PDFs, poemas e documentos pessoais serão incorporados progressivamente, sempre com contexto, data e créditos quando disponíveis.</div>
+<div class="note"><b>Próxima camada:</b> substituir gradualmente as referências por fotografias, vídeos, PDFs e poemas do acervo pessoal de Neri, mantendo créditos e contexto de cada material.</div>
 </div>
 </section>
 
