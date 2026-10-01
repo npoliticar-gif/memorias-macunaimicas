@@ -1,6 +1,6 @@
 const CACHE = 'memorias-macunaimicas-v1';
 const BASE = self.registration.scope;
-const SHELL = ['./', './index.html', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './sarau-na-quebrada-marca.jpg'].map(path => new URL(path, BASE).href);
+const SHELL = ['./', './index.html', './app.js', './manifest.webmanifest', './icon-192[1].png', './icon-512[1].png', './sarau-na-quebrada-marca.jpg'].map(path => new URL(path, BASE).href);
 self.addEventListener('install', event => {
  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });
